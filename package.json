@@ -1,0 +1,19 @@
+{
+  "name": "artillery-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "generate": "npx playwright codegen",
+    "load-test-PSC":"artillery run --output load-run-report.json --record --key a9_zU22fPDD4pIwMOTqld3BXfgxbvTXhhMt artillery_config_PSC.yml ",
+    "load-test-SLAMS":"artillery run --output load-run-report.json --record --key a9_zU22fPDD4pIwMOTqld3BXfgxbvTXhhMt artillery_config_SLAMS.yml ",
+    "report":"artillery report load-run-report.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.11.19"
+  }
+}
